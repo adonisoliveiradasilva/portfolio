@@ -1,0 +1,733 @@
+html, body { margin: 0; padding: 0; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+  *{
+    scroll-behavior: smooth;
+  }
+  
+  .menu-bar{
+    display: none;
+  }
+  
+  .menu-icone{
+    background-color: transparent;
+  
+  }
+  
+  .div-geral{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .div-top{
+    background-color: rgb(0, 74, 139);
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    display: flex;
+  }
+  
+    .div-foto{
+      transition: 200ms;
+      position: absolute;
+      left: 20vw;
+      transform: translateY(100px);
+      background-image: url("assets/foto.jpg");
+      background-size: contain;
+      border-radius: 100%;
+      width: 200px;
+      height: 200px;
+  
+      border: 10px solid  rgb(0, 74, 139);
+    }
+  
+    .div-foto:hover{
+      transform: translateY(80px);
+      transition: 200ms;
+      border: 10px solid  aliceblue
+    }
+  
+    .div-links{
+      width: 56vw;
+      height: 100px;
+      position: relative;
+      margin-left: calc(20vw + 230px);
+      top: 220px;
+      display: flex;
+    }
+  
+    .div-link{
+      width: 150px;
+      height: 100px;
+      position: relative;
+      margin: 0 10px;
+    }
+  
+    .div-link:hover .link-border{
+      width: 60px;
+      transition: 200ms;
+    }
+  
+    .div-link:hover .span{
+      transform: translateY(-10px);
+      transition: 200ms;
+    }
+  
+      .span{
+        position: absolute;
+        transition: 200ms;
+        transform: translateY(0px);
+      }
+  
+    .link-border{
+      width: 50px;
+      height: 5px;
+      margin-left: 20px;
+      border-bottom: 4px solid rgb(0, 74, 139);
+      transition: 200ms;
+    }
+  
+    .link{
+      text-decoration: none;
+      color: rgb(45, 45, 45);
+      font-size: 20px;
+      font-weight: 700;
+      margin: 20px;
+    }
+  
+  .conteudo-geral{
+    position: relative;
+    margin: auto;
+    /* height: auto; */
+    height: auto;
+    width: 60vw;
+    top: 100px;
+  }
+    .conteudo{
+      margin: auto;
+      position: relative;
+      top: 50px;
+      width: 100%;
+      height: 400px;
+      line-height: 23px;
+    }
+  
+      .conteudo-top{
+        padding-top: 20px;
+        border-top: 3px solid rgb(50, 112, 167);
+        margin: auto;
+        position: relative;
+        top: 50px;
+        height: 60px;
+        width: 100%;
+        display: flex;
+      }
+  
+        .div-icone{
+          width: 80px;
+          height: 80px;
+          position: relative;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+  
+        .icone1{
+          background-image: url("assets/hello.png");
+        }
+  
+        .conteudo-top .titulo{
+          position: relative;
+          top: 20px;
+          left: 10px;
+          font-size: 50px;
+          color:rgb(50, 112, 167);
+          font-weight: 800;
+          line-height: 50px;
+        }
+  
+      .conteudo-middle{
+        position: relative;
+        margin: auto;
+        top: 80px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+  
+      }
+        .conteudo-middle .texto{
+          position: relative;
+          font-size: 22px;
+          color:rgb(81, 89, 96);
+          text-align: justify;
+        }
+  
+    .conteudo-sobre-mim{
+      width: 100%;
+      height: 150px;
+      position: relative;
+      margin: auto;
+      display: flex;
+    }
+  
+    .icone2{
+      background-image: url("assets/sobre.png");
+    }
+  
+  
+      .sobre-mim-foto{
+        width: 80%;
+        height: 700px;
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        background-image: url("assets/foto1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      .sobre-mim-card{
+        display: flex;
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(37, 99, 154);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  
+        transition: 200ms;
+      }
+  
+      .sobre-mim-card:hover{
+        transition: 200ms;
+        transform: translateX(10px);
+      }
+  
+      .card1{
+        top: 300px;
+      }
+  
+      .icone3{
+        background-image: url("assets/nascimento.png");
+      }
+  
+      .card2{
+        top: 450px;
+      }
+      .icone4{
+        background-image: url("assets/estudo.png");
+      }
+  
+      .card3{
+        top: 600px;
+      }
+  
+      .icone5{
+        background-image: url("assets/casa.png");
+      }
+  
+  
+      .card4{
+        top: 750px;
+      }
+  
+      .icone6{
+        background-image: url("assets/violao.png");
+      }
+  
+        .sobre-mim-icone{
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+          margin-left: 25px;
+          position: relative;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+  
+        .sobre-mim-texto{
+          color: aliceblue;
+          margin-top: -10px;
+          margin-left: 25px;
+          position: relative;
+        }
+  
+        .sobre-mim-texto h1{
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .sobre-mim-texto span{
+          position: relative;
+          top: -15px;
+          font-size: 20px;
+        }
+  
+    .conteudo-skills{
+      width: 100%;
+      height: 800px;
+      position: relative;
+      margin-top: 800px;
+    }
+  
+    .icone7{
+      background-image: url("assets/skiils.png");
+    }
+
+
+
+
+  
+    .div-brain{
+      background-image: url("assets/brain.png");
+      position: absolute;
+      top: 255px;
+      left: 35%;
+      width: 40%;
+      height: 40%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+      .skill-card{
+        width: 30%;
+        height: 80px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: 80px;
+        margin-top: 20px;
+        display: flex;
+        transition: 200ms;
+      }
+  
+      .soft-skill{
+        background-color: rgb(0, 115, 255);
+      }
+  
+      .soft-skill:hover{
+        transition: 200ms;
+        transform: translateX(-10px);
+      }
+  
+      .hard-skill{
+        position: absolute;
+        background-color: rgb(37, 99, 154);
+      }
+  
+      .hard-skill:hover{
+        transition: 200ms;
+        transform: translateX(10px);
+      }
+  
+  
+  
+  
+      .skill-card-texto{
+        position: absolute;
+        width: auto;
+        height: 40px;
+        top: 30px;
+        left: 65px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        color: aliceblue;
+      }
+  
+      .skill-card-icone{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+  
+        .skill-card1{
+          /* top: 180px; */
+          left: 100px;
+        }
+  
+        .skill-icone1{
+          background-image: url("assets/proatividade.png");
+        }
+  
+        .skill-card2{
+          /* top: 280px; */
+          left: 50px;
+        }
+  
+        .skill-icone2{
+          background-image: url("assets/dedicado.png");
+        }
+  
+        .skill-card3{
+          /* top: 380px; */
+          left: 0px;
+        }
+  
+        .skill-icone3{
+          background-image: url("assets/comunicativo.png");
+        }
+  
+        .skill-card4{
+          /* top: 480px; */
+          left: 50px;
+        }
+  
+        .skill-icone4{
+          background-image: url("assets/interativo.png");
+        }
+  
+  
+        .skill-card5{
+          /* top: 580px; */
+          left: 100px;
+        }
+  
+        .skill-icone5{
+          background-image: url("assets/extrovertido.png");
+        }
+  
+        .skill-card6{
+          top: 160px;
+          right: 20px;
+        }
+  
+        .skill-icone6{
+          background-image: url("assets/html-css.png");
+        }
+  
+        .skill-card7{
+          top: 260px;
+          right: -30px;
+        }
+  
+        .skill-icone7{
+          background-image: url("assets/javascript.png");
+        }
+  
+        .skill-card8{
+          top: 360px;
+          right: -70px;
+        }
+  
+        .skill-icone8{
+          background-image: url("assets/angular.png");
+        }
+  
+        .skill-card9{
+          top: 460px; 
+          right: -30px;
+        }
+  
+        .skill-icone9{
+          background-image: url("assets/php.png");
+        }
+  
+        .skill-card10{
+          top: 560px;
+          right: 20px;
+        }
+  
+        .skill-icone10{
+          background-image: url("assets/mysql.png");
+        }
+
+      .conteudo-projetos{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 2100px;
+      } 
+      
+      .margin-bottom-100{
+        margin-bottom: 100px;
+      }
+
+      .icone9{
+        background-image: url("assets/projetos.png");
+      } 
+
+      .div-card{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+  
+      }
+
+      .div-card-conteudo{
+        width: calc(100% - 420px);
+        height: auto;
+        position: relative;
+        margin-left: 430px;
+        margin-top: 30px;
+       
+      }
+
+        .projeto-icone{
+          width: 40px;
+          height: 40px;
+          position: absolute;
+    
+          transform: translate(10px, -30px);
+         
+
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+    
+        }
+
+
+        .div-card-conteudo .titulo{
+          margin-left: 60px;
+          font-size: 30px;
+          color: rgb(37, 99, 154);
+        }
+
+
+        .div-card-conteudo .texto{
+          position: absolute;
+    
+          transform: translate(10px, 30px);
+         
+          font-size: 20px;
+          color: rgb(57, 57, 57);
+          line-height: 22px;
+          font-weight: 400;
+        }
+
+      .projeto-card{
+        width: 400px;
+        height: 225px;
+        position: absolute;
+        top: 15px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: 200ms;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+  
+      }
+
+      .projeto-card:hover{
+        transform: translateX(20px);
+        transition: 200ms;
+      }
+
+      .projeto-icone1{
+        background-image: url("assets/game.png");
+      }
+
+      .projeto-card-imagem1{
+        width: 400px;
+        height: 225px;
+        background-image: url("assets/dog-run.gif");
+      }
+
+
+     
+
+      .projeto-card-imagem2{
+        width: 400px;
+        height: 225px;
+        background-image: url("assets/controle-financeiro.gif");
+      }
+
+      .projeto-icone2{
+        background-image: url("assets/controle-financeiro.png");
+      }
+        
+      .projeto-card-imagem3{
+        width: 400px;
+        height: 225px;
+        background-image: url("assets/ladding-page.gif");
+      }
+
+      .projeto-icone3{
+        background-image: url("assets/ladding-page.png");
+      }
+
+      .projeto-card-imagem4{
+        width: 400px;
+        height: 225px;
+        background-image: url("assets/DeuPix.gif");
+      }
+
+      .projeto-icone4{
+        background-image: url("assets/DeuPix.png");
+      }
+      
+        
+    .conteudo-contato{
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      top: 3400px;
+      
+    }    
+    
+    .icone8{
+      background-image: url("assets/contato.png");
+    }
+
+      .contato-cards{
+        width: 100%;
+        height: 200px;
+        margin-top: 100px;
+        display: flex;
+      }
+
+      .contato-cards a{
+        position: relative;
+        margin: auto;
+      }
+
+        .conteudo-card{
+          width: 200px;
+          height: 200px;
+          margin: auto;
+          border-radius: 100%;
+          transition: 200ms;
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          background-color: rgba(0, 153, 255, 0.226);
+
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 50%; 
+        }
+
+        .conteudo-card:hover{
+          transition: 200ms;
+          transform: translateY(-10px);
+        }
+        
+        .contato-1{
+          background-image: url("assets/linkedin1.png");
+        }
+
+        .contato-2{
+          background-image: url("assets/github1.png");
+        }
+         
+        .contato-3{
+          background-image: url("assets/email1.png");
+        }
+
+        .contato-4{
+          background-image: url("assets/telefone1.png");
+        }
+
+        .contato-4 .div-numero{
+          color: rgb(5, 0, 36);
+          font-weight: 700;
+          text-decoration: none;
+         
+
+          font-size: 12px;   
+          position: relative;
+    
+          margin: 170px 50px;
+          width: 100px; 
+        }
+          .div-numero:link{
+            color: transparent;
+          }
+
+  .footer{
+    width: 100%;
+    height: 100px;
+
+    top: 1800px;
+    background-color: rgb(0, 74, 139);
+
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+  }
+
+
+  /* Responsivo - Projetos */
+  @media (max-width: 1250px){
+
+    .projeto-icone{
+      transform: translate(10px, 0px);
+    }
+
+    .div-card-conteudo .titulo{
+      font-size: 24px;
+    }
+
+    .div-card-conteudo .texto{
+      transform: translate(10px, 30px);
+      font-size: 17px;
+    }
+
+  }
+
+  @media (max-width: 1170px){
+
+    .projeto-card{
+      transform: scale(0.8);
+    }
+
+
+    .projeto-icone{
+      width: 30px;
+      height: 30px;
+    }
+
+    .div-card-conteudo .titulo{
+      font-size: 12px;
+    }
+
+    .div-card-conteudo .texto{
+      font-size: 10px;
+    }
+  }
+
+   /* Responsivo - Projetos */
+
+   @media (max-width: 1250px){
+    .conteudo-card{
+      transform: scale(0.8);
+    }
+   }
+
+   @media (max-width: 1130px){
+    
+    .conteudo-card{
+      transform: scale(0.6);
+      margin-left: -40px ;
+    }
+
+    .conteudo-card:hover{
+      transform: translateY(-20px);
+      width: 150px;
+      height: 150px;
+    }
+
+    .conteudo-card:hover .div-numero{
+      transform: translateY(-50px);
+      left: -25px;
+    }
+
+    
+   }
