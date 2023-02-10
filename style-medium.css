@@ -1,6 +1,10 @@
 
 
 @media (max-width: 1000px){
+  
+  .display-none{
+    display: none;
+  }
 
   .div-menu{
     display: none;
