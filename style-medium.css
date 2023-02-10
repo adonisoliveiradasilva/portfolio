@@ -1,1 +1,220 @@
-/* 1000px */
+
+
+@media (max-width: 1000px){
+
+  .div-menu{
+    display: none;
+  }
+
+    .div-foto{
+        left: 10vw;
+        width: 150px;
+        height: 150px;
+        border: 5px solid  rgb(0, 74, 139);
+      }
+    
+      .div-foto:hover{
+        border: 5px solid  aliceblue
+      }
+    
+      .div-links{
+        width: 70vw;
+        height: 100px;
+        margin-left: calc(10vw + 150px);
+      }
+    
+      .div-link{
+        width: 20vw;
+      }
+    
+      .div-link:hover .link-border{
+        width: 40px;
+      }
+    
+      .div-link:hover .span{
+        transform: translateY(-10px);
+      }
+    
+      .link-border{
+        width: 30px;
+        margin-left: 10px;
+      }
+    
+      .link{    
+        font-size: 15px;
+        margin: 10px;
+      }
+
+    
+    .sobre-mim-foto{
+        display: none;
+    }
+
+    .sobre-mim-card{
+        width: 100%;
+        height: 120px;
+        padding-right: 20px;
+    }
+
+    .conteudo-skills{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 800px;
+    }
+
+    
+    .div-brain{
+        display: none;
+      } 
+
+    
+        .skill-card{
+          width: 100%;
+          position: relative!important;
+          left: 0!important;
+          margin-top: 20px!important    ;
+        }
+
+        .hard-skill{
+            top: 80px !important;
+            position: relative!important;
+            background-color: rgb(37, 99, 154);
+          }
+
+        .skill-card6{
+            top: 0;
+            right: 20px;
+          }
+    
+        .skill-card7{
+            top: 0;
+            right: -30px;
+          }
+
+    
+          .skill-card8{
+            top: 0;
+            right: -70px;
+          }
+
+          .skill-card9{
+            top: 0; 
+            right: -30px;
+          }
+    
+          .skill-card10{
+            top: 0;
+            right: 20px;
+          }
+
+        /* Projetos */
+        
+        .conteudo-contato{
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 4700px;
+          }    
+
+       
+        .conteudo-projetos{
+            margin-top: 500px;
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 2100px;
+          } 
+          
+          .icone9{
+            background-image: url("assets/projetos.png");
+          } 
+    
+          .div-card{
+            width: 100%;
+            height: 450px;
+            position: relative;
+            margin-top: 20px;
+            display: block;
+            overflow: hidden;
+            border-top: 1px solid rgb(157, 160, 255);
+          }
+    
+          .div-card-conteudo{
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-left: 0px;
+            top: 220px;
+          }
+    
+            .projeto-icone{
+              width: 40px;
+              height: 40px;
+              position: absolute;
+        
+              transform: translate(10px, 0px);
+             
+    
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+        
+            }
+    
+    
+            .div-card-conteudo .titulo{
+              margin-left: 60px;
+              font-size: 30px;
+              color: rgb(37, 99, 154);
+            }
+    
+    
+            .div-card-conteudo .texto{
+              font-size: 18px;
+            }
+    
+          .projeto-card{
+            top: 15px;
+            margin-left: calc(50% - 200px);
+          }
+    
+          .projeto-card:hover{
+            transform: translateX(0px);
+          }
+    
+    /* Contato */
+
+
+    .contato-cards{
+        width: 100%;
+        height: 200px;
+      
+        display: flex;
+        position: relative;
+        margin: 100px 0;
+      }
+
+      .contato-cards a{
+        position: relative;
+        margin-left: -15px;
+      }
+
+        .conteudo-card{
+          width: 120px;
+          height: 120px;
+          margin: 0px;
+
+          background-size: 50%; 
+        }
+
+        .conteudo-card:hover{
+          transition: 200ms;
+          transform: translateY(0px);
+        }
+        
+    /* footer */
+    .footer{
+        margin-top: 1000px;
+    }
+}

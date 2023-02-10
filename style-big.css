@@ -9,10 +9,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .menu-bar{
     display: none;
   }
+
+  .div-menu{
+    display: none;
+  }
   
   .menu-icone{
     background-color: transparent;
-  
   }
   
   .div-geral{
