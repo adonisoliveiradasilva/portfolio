@@ -743,6 +743,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    @media (min-width: 1250px){
     .projeto-icone{
       transform: translate(10px, 0px);
+      background-color: red;
     }
    }
 
