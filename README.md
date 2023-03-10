@@ -22,7 +22,7 @@
 > 
 > <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="20" height="20"> Javascript.
 > 
-> <img src="https://pics.freeicons.io/uploads/icons/png/20637981701553750377-512.png" width="20" height="20"> Angular.
+> <img src="https://cdn-icons-png.flaticon.com/512/3334/3334886.png" width="20" height="20"> React.
 > 
 > <img src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png" width="20" height="20"> PHP.
 > > 
@@ -48,3 +48,6 @@
 <a href="https://github.com/adonisoliveiradasilva">
  <img align="center" src="https://github-readme-stats.vercel.app/api?username=adonisoliveiradasilva&show_icons=true&theme=dracula&line_height=27" alt="**Adonis** github stats"/>
 </a>
+
+
+
