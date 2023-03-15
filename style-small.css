@@ -168,16 +168,9 @@
   .projeto-card{
     top: 15px;
     margin-left: auto; 
-    width: 100%!important;
-    height: 45%!important;
-    background-size: contain!important;
-    background-position: center!important;
   }
 
   .projeto-card:hover{
-    width: 90%!important;
-    height: 40%!important;
-    background-size: contain!important;
     transform: translateX(10px)!important;
   }
 

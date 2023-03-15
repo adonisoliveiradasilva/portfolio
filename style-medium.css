@@ -140,7 +140,6 @@
             position: relative;
             margin-top: 20px;
             display: block;
-            overflow: hidden;
             border-top: 1px solid rgb(157, 160, 255);
           }
     
@@ -150,6 +149,7 @@
             position: relative;
             margin-left: 0px;
             top: 220px;
+
           }
     
             .projeto-icone{
@@ -180,7 +180,8 @@
     
           .projeto-card{
             top: 15px;
-            margin-left: calc(50% - 200px);
+            margin: auto;
+            left: calc(50% - 200px);
           }
     
           .projeto-card:hover{
