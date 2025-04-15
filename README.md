@@ -5,11 +5,9 @@
 
 > <img src="https://cdn-icons-png.flaticon.com/512/4661/4661320.png" width="20" height="20">  Sou desenvolvedor Web e Mobile.
 >
-> <img src="https://cdn-icons-png.flaticon.com/512/998/998427.png" width="20" height="20"> Atualmente trabalho na [JDC Tech & People](https://jdctech.com.br/).
-> 
-> <img src="https://cdn-icons-png.flaticon.com/512/1913/1913288.png" width="20" height="20"> Nas horas vagas gosto de cantar e tocar violão.
-> 
-> <img src="https://cdn-icons-png.flaticon.com/512/183/183767.png" width="20" height="20"> Sou Estudante de engenharia da Computação na UFOP.
+> <img src="https://cdn-icons-png.flaticon.com/512/998/998427.png" width="20" height="20"> Atualmente trabalho no Grupo LPJ.
+>  
+> <img src="https://cdn-icons-png.flaticon.com/512/183/183767.png" width="20" height="20"> Sou Estudante de Sistemas de Informação na UFOP.
 > 
 > <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20" height="20"> Meus Projetos: [Github](https://github.com/adonisoliveiradasilva/).
 > 
@@ -18,15 +16,15 @@
 ### <img src="https://cdn-icons-png.flaticon.com/512/5424/5424004.png" width="20" height="20"> Hard Skills
 > <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" width="20" height="20"> HTML.
 >
-> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="20" height="20"> CSS.
+> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="20" height="20"> CSS e SCSS.
 > 
-> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="20" height="20"> Javascript.
+> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="20" height="20"> Javascript e Typescript.
 > 
-> <img src="https://cdn-icons-png.flaticon.com/512/3334/3334886.png" width="20" height="20"> React.
+> <img src="https://cdn-icons-png.flaticon.com/512/3334/3334886.png" width="20" height="20"> Angular.
 > 
-> <img src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png" width="20" height="20"> PHP.
+> <img src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png" width="20" height="20"> Node/Nest.
 > > 
-> <img src="https://pics.freeicons.io/uploads/icons/png/19218518301553750371-512.png" width="20" height="20"> Mysql.
+> <img src="https://pics.freeicons.io/uploads/icons/png/19218518301553750371-512.png" width="20" height="20"> Mysql,  MariaDB, Postgresql.
 > 
 ### <img src="https://cdn-icons-png.flaticon.com/512/4727/4727496.png" width="20" height="20"> Soft Skills
 > <img src="https://cdn-icons-png.flaticon.com/512/1281/1281562.png" width="20" height="20"> Proativo.
