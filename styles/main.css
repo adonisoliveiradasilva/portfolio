@@ -72,6 +72,7 @@ body {
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .sobre-content .sobre-text p {
@@ -80,13 +81,13 @@ body {
     font-style: italic;
     text-align: center;
     margin: 0 auto 1.5rem auto;
-    /* max-width: 700px; */
     letter-spacing: 0.2px;
     line-height: 1.7;
     background: rgba(92,92,255,0.06);
     border-radius: 8px;
     padding: 1.2rem 2rem;
     box-shadow: 0 1px 6px rgba(92,92,255,0.04);
+    max-width: 1200px;
 }
 
 /* Hero Section */
@@ -189,11 +190,12 @@ section {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
+    width: 100%;
 }
 
 .skill-card {
@@ -733,21 +735,20 @@ section {
 
 /* Resultados e Conquistas - NOVO ESTILO */
 .conquistas-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0 auto 2rem auto;
-    max-width: 1100px;
+    max-width: 1200px;
+    width: 100%;
 }
 .conquistas-list li {
     background: var(--timeline-card-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     padding: 1.4rem 2.2rem;
-    width: 350px;
     min-height: 80px;
     display: flex;
     align-items: flex-start;
@@ -760,14 +761,10 @@ section {
     text-align: left;
     box-sizing: border-box;
     position: relative;
+    height: 100%;
 }
 @media (max-width: 1100px) {
-    .conquistas-list li {
-        width: 100%;
-        min-width: unset;
-    }
     .sobre-content .sobre-text p {
-        /* max-width: 400px; */
         width: 100%;
         padding: 1.4rem 2.2rem;
     }
@@ -797,12 +794,13 @@ section {
 /* Como Eu Entrego Valor - NOVO ESTILO */
 .como-entrego-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
     gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0 auto 2rem auto;
     width: 100%;
+    max-width: 1200px;
 }
 .como-entrego-list li {
     background: var(--timeline-card-bg);
@@ -899,7 +897,7 @@ section {
 /* Soft Skills Section - NOVO ESTILO */
 .soft-skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Força 3 colunas */
     gap: 1.5rem;
     list-style: none;
     padding: 0;
@@ -1027,5 +1025,21 @@ section {
         max-width: 100%;
         padding: 1.2rem 1rem;
         margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .conquistas-list,
+    .soft-skills-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .conquistas-list,
+    .soft-skills-list,
+    .como-entrego-list,
+    .skills-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
     }
 } 
