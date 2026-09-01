@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Adonis Oliveira, Desenvolvedor Frontend Angular Pleno.">
+    <title>Adonis Oliveira | Frontend Angular Pleno</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
-        <nav class="nav-container">
-            <div class="logo">Adonis Oliveira da Silva</div>
+        <nav class="nav-container" aria-label="Navegação Principal">
+            <div class="logo">Adonis<span class="highlight">.dev</span></div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -24,438 +23,157 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Adonis Oliveira</h1>
-            <p>Engenheiro de Software com experiência em levantamento e análise de requisitos com o foco em experiência do usuário.</p>
-            <!-- <a href="#contato" class="btn-primary">Vamos conversar</a> -->
-        </div>
-        <div class="hero-image">
-            <img src="assets/persona.png" alt="Ilustração Adonis" />
-        </div>
-    </section>
-
-    <!-- Sobre Section -->
-    <!-- <section id="sobre" class="sobre">
-        <div class="section-header">
-            <h2>Sobre Mim</h2>
-        </div>
-        <div class="sobre-content">
-            <div class="sobre-text">
-                <p>Traduzo requisitos complexos em soluções web performáticas, escaláveis e fáceis de manter. +3 anos como Egenheiro de Software, com foco em Angular, Microfrontends e Atomic Design.</p>
+    <section class="hero fade-up">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Adonis Oliveira</h1>
+                <h2 class="gradient-text">Especialista Frontend Angular</h2>
+                <p>Construindo interfaces corporativas escaláveis, responsivas e de alta performance. Forte domínio em <strong>RxJS, Design Systems e Integração de APIs REST</strong>, impulsionado por um rigoroso <strong>AI-First Workflow</strong>.</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn primary" aria-label="Ver meus projetos em destaque">Ver Projetos</a>
+                    <a href="#contato" class="btn secondary" aria-label="Entrar em contato">Contato</a>
+                </div>
             </div>
         </div>
-    </section> -->
-
-    <!-- <section id="conquistas" class="conquistas">
-        <div class="section-header">
-            <h2>Resultados e Conquistas</h2>
-        </div>
-        <ul class="conquistas-list">
-            <li>Otimizei o desempenho de aplicações publicadas em ambiente produtivo.</li>
-            <li>Apliquei Atomic Design em sistemas com redundância de código.</li>
-            <li>Atuei como ponte entre PO's e o time técnico, traduzindo os requisitos</li>
-            <li>Desenvolvi protótipos no FIGMA para alinhar expectativa com os stakeholders.</li>
-            <li>Escrevi User Stories detalhadas e dividi em Tasks técnicas, o que resultou em sprints mais eficientes.</li>
-            <li>Fui o desenvolvedor principal na implementação de um sistema web em ambiente produtivo, atuando desde o levantamento de requistos até a implantação em ambiente Produtivo</li>
-        </ul>
     </section>
 
-    <section id="como-entrego" class="como-entrego">
-        <div class="section-header">
-            <h2>Como Eu Entrego Valor</h2>
+    <section id="sobre" class="sobre section-padding fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="sobre-content card">
+                <p>Sou um Engenheiro de Software com foco absoluto na experiência do usuário e arquitetura de front-end. Especialista no ecossistema <strong>Angular e TypeScript</strong>, possuo background sólido em back-end (.NET/C#), o que me garante total autonomia na integração e consumo de APIs complexas.</p>
+                <br>
+                <p>🚀 <strong>Performance & Acessibilidade:</strong> Desenvolvo layouts responsivos e acessíveis, sempre buscando otimização extrema. Integro ferramentas de IA no dia a dia para otimizar <em>code reviews</em>, estruturar testes (Jasmine/Jest) e aplicar boas práticas de Clean Code.</p>
+            </div>
         </div>
-        <ul class="como-entrego-list">
-            <li>Levantamento de requisitos junto aos stakeholders e criando protótipos no Figma</li>
-            <li>Ferramentas: Angular, React, Vue.js, Node.js, NestJS, Python</li>
-            <li>Domínio de RESTful APIs, Microfrontends, Design Systems, Atomic Design</li>
-            <li>Foco em performance, usabilidade e boas práticas de Clean Code</li>
-        </ul>
-    </section> -->
-
-
-    <section id="soft-skills" class="soft-skills">
-        <div class="section-header">
-            <h2>Soft Skills</h2>
-        </div>
-        <ul class="soft-skills-list">
-            <li data-icon="fa-users">Liderança Técnica</li>
-            <li data-icon="fa-book">Documentação Técnica</li>
-            <li data-icon="fa-brain">Pensamento Analítico</li>
-            <li data-icon="fa-comments">Comunicação com Stakeholders</li>
-            <li data-icon="fa-list-check">Organização de Backlog</li>
-            <li data-icon="fa-rocket">Proatividade em ambientes ágeis</li>
-        </ul>
     </section>
 
-    <!-- Habilidades Section -->
-    <section id="habilidades" class="habilidades">
-        <div class="section-header">
-            <h2>Habilidades Técnicas</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="skill-content">
-                    <h3>Front-end</h3>
+    <section id="habilidades" class="habilidades section-padding fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tech Stack & Diferenciais</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card card hover-glow">
+                    <i class="fas fa-layer-group skill-icon"></i>
+                    <h3>Frontend & UI</h3>
                     <div class="skill-tags">
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS/SCSS</span>
-                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Angular Avançado</span>
                         <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">UI/UX Design</span>
-                        <span class="tech-tag">Atomic Design</span>
+                        <span class="tech-tag">RxJS & Programação Reativa</span>
                         <span class="tech-tag">Design Systems</span>
+                        <span class="tech-tag">Acessibilidade (a11y)</span>
                     </div>
-                    <ul class="skill-details">
-                        <li>Desenvolvimento de interfaces modernas e responsivas</li>
-                        <li>Testes com Jasmine (Unitários) e Testes de Integração</li>
-                        <li>Atomic Design e Design Systems</li>
-                    </ul>
                 </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <div class="skill-content">
-                    <h3>Back-end</h3>
+                <div class="skill-card card hover-glow">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Backend & Integração</h3>
                     <div class="skill-tags">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">NestJS</span>
-                        <span class="tech-tag">Java/Spring</span>
-                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Integração de APIs REST</span>
+                        <span class="tech-tag">C# .NET Core</span>
+                        <span class="tech-tag">Node.js / NestJS</span>
                     </div>
-                    <ul class="skill-details">
-                        <li>Desenvolvimento de APIs RESTful</li>
-                        <li>Boas práticas de segurança</li>
-                        <li>Performance e escalabilidade</li>
-                        <li>Design Patterns</li>
-                    </ul>
                 </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="skill-content">
-                    <h3>Bancos de Dados</h3>
+                <div class="skill-card card hover-glow">
+                    <i class="fas fa-shield-halved skill-icon"></i>
+                    <h3>Qualidade & DevOps</h3>
                     <div class="skill-tags">
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">MariaDB</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Testes Unitários (Jasmine)</span>
+                        <span class="tech-tag">Git & Gitflow</span>
+                        <span class="tech-tag">CI/CD Pipelines</span>
+                        <span class="tech-tag">Clean Architecture</span>
                     </div>
-                    <ul class="skill-details">
-                        <li>Modelagem relacional e não relacional</li>
-                        <li>Versionamento com Git</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-project-diagram"></i>
-                </div>
-                <div class="skill-content">
-                    <h3>Metodologias e Arquiteturas</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Scrum</span>
-                        <span class="tech-tag">Agile</span>
-                        <span class="tech-tag">Microfrontends</span>
-                        <span class="tech-tag">RESTful APIs</span>
-                        <span class="tech-tag">Design Patterns</span>
-                    </div>
-                    <ul class="skill-details">
-                        <li>Gestão ágil de projetos</li>
-                        <li>Integração contínua</li>
-                        <li>Documentação técnica</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experiência Section -->
-    <section id="experiencia" class="experiencia">
-        <div class="section-header">
-            <h2>Experiência Profissional</h2>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">09/2021 - 08/2022</div>
-                <div class="timeline-content">
-                    <h3>Freelancer</h3>
-                    <h4>Desenvolvedor Web Full Stack Júnior</h4>
-                    <ul>
-                        <li>✔️ Planejei, desenvolvi e entreguei uma plataforma de correção de redações, com foco em experiência do usuário e design responsivo.</li>
-                        <li>✔️ Atuei diretamente na criação da interface com HTML, CSS e boas práticas de UI Design, garantindo uso fluido tanto em desktop quanto em mobile.</li>
-                        <li>✔️ Cumpri os prazos com antecedência, garantindo a satisfação do cliente.</li>
-                    </ul>
-                    <p><strong>Tecnologias:</strong> HTML5 | CSS3 | Laravel | PHP | MySQL | UI/UX Design | Mobile First Design</p>
-                </div>
+    <section id="experiencia" class="experiencia section-padding fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experiência Profissional</h2>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">07/2022 - 08/2022</div>
-                <div class="timeline-content">
-                    <h3>UFOP - Universidade Federal de Ouro Preto</h3>
-                    <h4>Monitor de Programação</h4>
-                    <ul>
-                        <li>✔️ Auxiliei alunos com dificuldades em programação em C, ajudando estudantes que já haviam sido reprovados a conquistarem aprovação na disciplina.</li>
-                        <li>✔️ Estruturei materiais de apoio (guias práticos) sobre estruturas condicionais e de repetição, que reduziram dúvidas recorrentes nas monitorias.</li>
-                        <li>✔️ Realizei atendimentos individuais, explicando conceitos básicos do zero para alunos com maior dificuldade.</li>
-                    </ul>
-                    <p><strong>Competências desenvolvidas:</strong> Comunicação | Didática | Suporte Técnico | Programação em C</p>
+            <div class="timeline">
+                <div class="timeline-item card">
+                    <div class="timeline-date">05/2023 - Atual</div>
+                    <div class="timeline-content">
+                        <h3>Engenheiro de Software Pleno</h3>
+                        <h4>Grupo LPJ</h4>
+                        <ul>
+                            <li>🚀 <strong>Performance:</strong> Reduzi o tempo de renderização de estruturas de dados de 5 minutos para menos de 3 segundos utilizando otimizações no Angular.</li>
+                            <li>🏗️ <strong>Componentização:</strong> Apliquei Atomic Design e conceitos de Design Systems para criar componentes reutilizáveis e layouts responsivos.</li>
+                            <li>⚙️ <strong>Qualidade de Código:</strong> Participei ativamente de Code Reviews e aumentei a cobertura de testes de frontend com Jasmine.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">08/2022 - 03/2023</div>
-                <div class="timeline-content">
-                    <h3>JDC Tech and People</h3>
-                    <h4>Desenvolvedor Full Stack Júnior</h4>
-                    <ul>
-                        <li>✔️ Melhorei a performance e a usabilidade de um sistema interno de rotulação de imagens para projetos de Machine Learning, criando interfaces intuitivas em Angular com consumo de APIs PHP.</li>
-                        <li>✔️ Corrigi falhas críticas de comunicação entre Front-end e Back-end, padronizando a estrutura JSON e eliminando erros de integração.</li>
-                        <li>✔️ Reduzi o tempo de rotulação de imagens, entregando uma solução mais eficiente para os usuários do sistema interno da empresa.</li>
-                        <li>✔️ Atuei na sustentação de sistemas em produção, garantindo agilidade na resolução de bugs e melhorias contínuas.</li>
-                    </ul>
-                    <p><strong>Tecnologias:</strong> Angular | PHP | TypeScript | HTML | CSS | MySQL | Scrum | UI/UX Design</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">05/2023 - Atual</div>
-                <div class="timeline-content">
-                    <h3>Grupo LPJ</h3>
-                    <h4>Engenheiro de Software</h4>
-                    <ul>
-                        <li>✔️ Reduzi o tempo de renderização de uma estrutura de dados em árvore de 5 minutos para menos de 3 segundos, através de otimizações de performance e uso de funções recursivas.</li>
-                        <li>✔️ Melhorei a performance das integrações com a API, eliminando chamadas sequenciais desnecessárias e implementando requisições paralelas.</li>
-                        <li>✔️ Implementei arquitetura de Microfrontends, permitindo o acoplamento modular de diferentes projetos dentro de uma aplicação Host, aumentando a autonomia de squads e a escalabilidade do sistema.</li>
-                        <li>✔️ Criei protótipos no Figma, utilizados em reuniões de pré-planning para validação antecipada de features, o que reduziu retrabalho e custos de desenvolvimento.</li>
-                        <li>✔️ Apliquei Atomic Design com Angular, garantindo padronização e reuso de componentes UI, acelerando o desenvolvimento de novas funcionalidades.</li>
-                        <li>✔️ Estruturei testes unitários com Jasmine, aumentando a cobertura de testes em um sistema com regras de negócio complexas, evitando regressões entre módulos interdependentes.</li>
-                        <li>✔️ Atuei diretamente com Product Owner e Stakeholders, colaborando na documentação de regras de negócio e melhorando o entendimento técnico do Squad sobre os requisitos, o que aumentou a previsibilidade das entregas.</li>
-                    </ul>
-                    <p><strong>Tecnologias:</strong> Angular | NestJS | TypeScript | PostgreSQL | Microfrontends | Jasmine | Figma | Scrum | Atomic Design | UI/UX Design</p>
+                <div class="timeline-item card">
+                    <div class="timeline-date">08/2022 - 03/2023</div>
+                    <div class="timeline-content">
+                        <h3>Desenvolvedor Full Stack</h3>
+                        <h4>JDC Tech and People</h4>
+                        <ul>
+                            <li>Otimizou a interface (UI/UX) de sistemas internos consumindo APIs REST de forma eficiente.</li>
+                            <li>Identificou e corrigiu débitos técnicos e falhas críticas de comunicação de dados (JSON).</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formação Acadêmica Section -->
-    <section id="formacao" class="formacao">
-        <div class="section-header">
-            <h2>Formação Acadêmica</h2>
-        </div>
-        <div class="education-grid">
-            <div class="education-card">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-content">
-                    <h3>Sistemas de Informação</h3>
-                    <h4>UFOP - Universidade Federal de Ouro Preto</h4>
-                    <p class="education-period">Início: Maio de 2025</p>
-                    <ul class="education-details">
-                        <!-- <li>Aproveitamento de ~50% das disciplinas</li> -->
-                        <li>Transição da Engenharia da Computação</li>
-                        <!-- <li>Transição iniciada em 2023</li> -->
-                    </ul>
-                </div>
+    <section id="projetos" class="projetos section-padding fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos em Destaque</h2>
             </div>
-
-            <div class="education-card">
-                <div class="education-icon">
-                    <i class="fas fa-laptop-code"></i>
+            <div class="projects-grid">
+                <div class="project-card card hover-glow">
+                    <div class="project-content">
+                        <h3>Lumen (CRM)</h3>
+                        <p>Plataforma corporativa com arquitetura robusta. Foco total em componentização, consumo de APIs REST e performance de renderização.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                        </div>
+                        <a href="https://github.com/adonisoliveiradasilva/Lumen" class="btn primary" target="_blank" rel="noopener noreferrer">Ver Repositório</a>
+                    </div>
                 </div>
-                <div class="education-content">
-                    <h3>Técnico em Informática - Desenvolvimento Web</h3>
-                    <h4>CSFX - Colégio São Francisco Xavier</h4>
-                    <p class="education-period">01/2019 - 07/2020 (1 ano e meio)</p>
-                    <ul class="education-details">
-                        <li>Foco em desenvolvimento web</li>
-                        <li>Formação técnica completa</li>
-                    </ul>
+                <div class="project-card card hover-glow">
+                    <div class="project-content">
+                        <h3>POC RxJS</h3>
+                        <p>Implementação focada em gerenciamento de estado complexo utilizando RxJS e programação reativa no Angular.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">RxJS</span>
+                            <span class="tech-tag">Atomic Design</span>
+                        </div>
+                        <a href="https://github.com/adonisoliveiradasilva/angular-rxjs-poc" class="btn primary" target="_blank" rel="noopener noreferrer">Ver Repositório</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Idiomas Section -->
-    <section id="idiomas" class="idiomas">
-        <div class="section-header">
-            <h2>Idiomas</h2>
-        </div>
-        <div class="language-container">
-            <div class="language-card">
-                <div class="language-icon">
-                    <i class="fas fa-language"></i>
-                </div>
-                <div class="language-content">
-                    <h3>Inglês</h3>
-                    <div class="language-level">
-                        <div class="level-tag">Em curso - WIZARD</div>
-                    </div>
-                    <ul class="language-details">
-                        <li>Final do segundo módulo (2/6)</li>
-                        <li>Foco em conversação</li>
-                        <li>Desenvolvimento da escrita</li>
-                        <li>Prática de leitura</li>
-                        <li>Compreensão auditiva</li>
-                        <li>Nível A2</li>
-                    </ul>
-                </div>
+    <section id="contato" class="contato section-padding fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vamos Transformar Experiências?</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Projetos Section -->
-    <section id="projetos" class="projetos">
-        <div class="section-header">
-            <h2>Projetos Acadêmicos</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/dog-run.gif" alt="Dog Run Game">
-                </div>
-                <div class="project-content">
-                    <h3>Dog-Run</h3>
-                    <p>Desfrute de um jogo divertido e desenvolvido com as tecnologias HTML, CSS e JavaScript. Inspirado no popular "Dinossauro do Google", este jogo promete horas de diversão.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/dog-run" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/Cobrinha.gif" alt="Jogo da Cobrinha">
-                </div>
-                <div class="project-content">
-                    <h3>Jogo da Cobrinha</h3>
-                    <p>O jogo da cobrinha é um clássico dos videogames em que o jogador controla uma cobra que deve se mover pela tela para comer alimentos e crescer. Aqui foi desenvolvido em HTML, CSS e JavaScript.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/jogo-cobrinha" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/Estoque.gif" alt="CRUD Estoque">
-                </div>
-                <div class="project-content">
-                    <h3>Crud - Estoque</h3>
-                    <p>Projeto desenvolvido em React no front, PHP como linguagem da API e MySQL como banco de dados relacional. Este Projeto tem o objetivo de ser um sistema do tipo CRUD que simula um estoque de auto peças.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/crud-estoque" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <div class="section-header">
-            <h2>Projetos de Prova de Conceito (em desenvolvimento)</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/my_universe.gif" alt="MyUniverse">
-                </div>
-                <div class="project-content">
-                    <h3>my_universe</h3>
-                    <p>Projeto que conta com uma lista de tarefas vinculados à disciplinas e datas importantes para o aluno universitário.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">RxJS</span>
-                        <span class="tech-tag">Atomic Design</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/uniVerse" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/angular-rxjs-poc.gif" alt="POC RxJS">
-                </div>
-                <div class="project-content">
-                    <h3>POC RxJS</h3>
-                    <p>Esse projeto tem o objetivo de aprimorar conhecimento na área de Atomic Design e gerenciamento de estado com RxJS</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">Atomic Design</span>
-                        <span class="tech-tag">RxJS</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/angular-rxjs-poc" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/docClassifier.gif" alt="DocClassifier">
-                </div>
-                <div class="project-content">
-                    <h3>DocClassifier</h3>
-                    <p>Projeto conta com um modelo responsável por verificar classificação de documentos enviados pelos usuários usando conceitos de visão computacional.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Visão Computacional</span>
-                    </div>
-                    <a href="https://github.com/adonisoliveiradasilva/docClassifier" class="btn primary" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contato">
-        <div class="section-header">
-            <h2>Vamos Conversar?</h2>
-        </div>
-        <div class="contact-content">
             <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:adonisoliveiradasilva18@gmail.com">adonisoliveiradasilva18@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/adonis-oliveira/" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/adonisoliveiradasilva" target="_blank">GitHub</a>
-                </div>
+                <a href="mailto:adonisoliveiradasilva18@gmail.com" class="contact-item card hover-glow" aria-label="Enviar e-mail"><i class="fas fa-envelope"></i> E-mail</a>
+                <a href="https://www.linkedin.com/in/adonis-oliveira/" target="_blank" rel="noopener noreferrer" class="contact-item card hover-glow" aria-label="Acessar LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/adonisoliveiradasilva" target="_blank" rel="noopener noreferrer" class="contact-item card hover-glow" aria-label="Acessar GitHub"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2024 - Desenvolvido por Adonis Oliveira da Silva</p>
+        <div class="container">
+            <p>&copy; 2026 - Adonis Oliveira. Desenvolvido com foco em Clean Code e Acessibilidade.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
