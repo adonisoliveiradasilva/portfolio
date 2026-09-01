@@ -219,3 +219,131 @@ h1, h2, h3, h4 {
     .timeline-details::before { display: none; }
     .nav-links, .decor { display: none; }
 }
+
+/* ==========================================================================
+   Efeito: Chuva de Pétalas de Maehwa
+   ========================================================================== */
+#petal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Garante que não bloqueie os cliques do usuário */
+    z-index: 9999; /* Fica por cima de tudo */
+    overflow: hidden;
+}
+
+.petal {
+    position: absolute;
+    top: -20px;
+    background-color: var(--primary-red);
+    opacity: 0.6; /* Levemente transparente */
+    /* Formato de uma pétala real */
+    border-radius: 15px 0 15px 0; 
+    pointer-events: none;
+    animation: fall linear forwards, sway ease-in-out infinite alternate;
+}
+
+/* Animação de queda (De cima para baixo) */
+@keyframes fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+/* Animação de balanço (Esquerda para Direita) */
+@keyframes sway {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(30px) rotate(45deg);
+    }
+}
+
+/* ==========================================================================
+   Player de Música Flutuante
+   ========================================================================== */
+.music-float-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(248, 245, 240, 0.9);
+    border: 1px solid var(--border-color);
+    color: var(--text-ink);
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    width: 42px; /* Começa como um círculo */
+    height: 42px;
+}
+
+.music-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    color: var(--primary-red);
+    transition: var(--transition);
+}
+
+.music-text {
+    white-space: nowrap;
+    opacity: 0;
+    max-width: 0;
+    transform: translateX(10px);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: var(--text-muted);
+}
+
+/* Expande o botão no Hover */
+.music-float-btn:hover {
+    width: 155px; /* Abre para mostrar o texto */
+    padding: 12px 18px;
+    border-color: var(--primary-red);
+    background: #FFF;
+}
+
+.music-float-btn:hover .music-text {
+    opacity: 1;
+    max-width: 100px;
+    transform: translateX(0);
+    margin-left: 10px;
+}
+
+/* Estado Ativo (Música Tocando) */
+.music-float-btn.playing {
+    border-color: var(--primary-red);
+    background: rgba(148, 33, 33, 0.05);
+}
+
+.music-float-btn.playing .music-icon i {
+    animation: sound-pulse 1.5s infinite alternate;
+}
+
+@keyframes sound-pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.2); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .music-float-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+}

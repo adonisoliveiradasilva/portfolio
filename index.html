@@ -6,15 +6,19 @@
     <title>Adonis Oliveira | Desenvolvedor Frontend Pleno</title>
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Elementos Decorativos -->
+    <div id="petal-container"></div>
     <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left">
     <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right">
     <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 70%">
     <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 70%">
-        <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 120%">
-    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 120%">
+    <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 140%">
+    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 140%">
+    <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 210%">
+    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 210%">
     <img src="assets/korean/vertical-banner.png" alt="" class="decor vertical-banner">
 
     <header class="header">
@@ -225,6 +229,17 @@
             </div>
         </div>
     </section>
+
+    <!-- Player de Áudio Oculto -->
+    <audio id="bg-music" loop>
+        <source src="assets/korean/bgm-joseon.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Botão Flutuante Elegante -->
+    <button id="music-toggle" class="music-float-btn" aria-label="Ativar atmosfera sonora">
+        <span class="music-icon"><i class="fas fa-music"></i></span>
+        <span class="music-text">Ativar Imersão</span>
+    </button>
 
     <footer class="footer">
         <p>&copy; 2026 - Adonis Oliveira. Código escalável, interfaces precisas.</p>
