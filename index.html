@@ -3,177 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Adonis Oliveira, Desenvolvedor Frontend Angular Pleno.">
-    <title>Adonis Oliveira | Frontend Angular Pleno</title>
+    <title>Adonis Oliveira | Desenvolvedor Frontend Pleno</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Elementos Decorativos -->
+    <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left">
+    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right">
+    <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 70%">
+    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 70%">
+        <img src="assets/korean/branch-top.png" alt="" class="decor branch-top-left" style="margin-top: 120%">
+    <img src="assets/korean/branch-rigth.png" alt="" class="decor branch-right" style="margin-top: 120%">
+    <img src="assets/korean/vertical-banner.png" alt="" class="decor vertical-banner">
+
     <header class="header">
-        <nav class="nav-container" aria-label="Navegação Principal">
-            <div class="logo">Adonis<span class="highlight">.dev</span></div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <div class="logo-box">
+                <div class="logo">Adonis<span>.dev</span></div>
+                <img src="assets/korean/tassel.png" alt="" class="tassel">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero fade-up">
-        <div class="container hero-content">
+    <section id="inicio" class="hero container section-padding fade-up">
+        <div class="hero-content">
             <div class="hero-text">
+                <span class="subtitle">ENGENHARIA FRONTEND</span>
                 <h1>Adonis Oliveira</h1>
-                <h2 class="gradient-text">Desenvolvedor Frontend Angular</h2>
-                <p>Construindo interfaces corporativas escaláveis, responsivas e de alta performance. Forte domínio em <strong>RxJS, Design Systems e Integração de APIs REST</strong>, impulsionado por um rigoroso <strong>AI-First Workflow</strong>.</p>
+                <h2>Desenvolvedor Pleno</h2>
+                <hr class="divider-left">
+                <p>Especialista no ecossistema <strong>Angular e TypeScript</strong>. Desenvolvo interfaces escaláveis, responsivas e de alta performance, unindo arquitetura sólida (Clean Architecture) a uma integração eficiente de APIs REST.</p>
                 <div class="hero-actions">
-                    <a href="#projetos" class="btn primary" aria-label="Ver meus projetos em destaque">Ver Projetos</a>
-                    <a href="#contato" class="btn secondary" aria-label="Entrar em contato">Contato</a>
+                    <a href="#projetos" class="btn primary">Ver Projetos</a>
+                    <a href="#contato" class="btn secondary">Entrar em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/korean/hero-hanok.png" alt="Arquitetura Tradicional" class="blend-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre container section-padding fade-up">
+        <div class="section-header text-center">
+            <h3>Perfil Profissional</h3>
+            <img src="assets/korean/flower-icon.png" class="divider-icon" alt="">
+        </div>
+        <div class="sobre-content">
+            <div class="arch-image">
+                <img src="assets/korean/sobre-arch.png" alt="Janela Tradicional" class="blend-img">
+            </div>
+            <div class="sobre-info">
+                <p>Sou um Engenheiro de Software com foco em usabilidade, performance e qualidade de código. Com uma sólida base de backend (.NET e Java), possuo total autonomia para atuar de ponta a ponta na integração de sistemas complexos.</p>
+                <p>Trabalho em forte alinhamento com times de Produto e Design (UI/UX) para garantir que as regras de negócio sejam traduzidas em interfaces fluidas. Além disso, utilizo <strong>Inteligência Artificial</strong> no meu dia a dia como ferramenta de produtividade para otimizar testes unitários (Jasmine), apoiar refatorações e garantir um <em>code review</em> rigoroso e ágil.</p>
+                
+                <div class="skills-tags">
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>RxJS & Signals</span>
+                    <span>C# .NET</span>
+                    <span>Clean Architecture</span>
+                    <span>Testes Unitários</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="sobre section-padding fade-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sobre Mim</h2>
-            </div>
-            <div class="sobre-content card">
-                <p>Sou um Engenheiro de Software com foco absoluto na experiência do usuário e arquitetura de front-end. Especialista no ecossistema <strong>Angular e TypeScript</strong>, possuo background sólido em back-end (.NET/C#), o que me garante total autonomia na integração e consumo de APIs complexas.</p>
-                <br>
-                <p>🚀 <strong>Performance & Acessibilidade:</strong> Desenvolvo layouts responsivos e acessíveis, sempre buscando otimização extrema. Integro ferramentas de IA no dia a dia para otimizar <em>code reviews</em>, estruturar testes (Jasmine/Jest) e aplicar boas práticas de Clean Code.</p>
-            </div>
+    <section id="experiencia" class="experiencia container section-padding fade-up">
+        <div class="section-header text-center">
+            <h3>Experiência Profissional</h3>
+            <img src="assets/korean/flower-icon.png" class="divider-icon" alt="">
         </div>
-    </section>
-
-    <section id="habilidades" class="habilidades section-padding fade-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Tech Stack & Diferenciais</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Maio 2023 – Atual</div>
+                <div class="timeline-details">
+                    <h4>Desenvolvedor Full Stack Pleno</h4>
+                    <span class="company">Grupo LPJ</span>
+                    <ul>
+                        <li>Identificou e refatorou gargalos de renderização em estruturas de dados complexas, reduzindo o tempo de carregamento de 5 minutos para 3 segundos no Angular.</li>
+                        <li>Liderou a padronização de componentes utilizando <em>Atomic Design</em>, aumentando o reuso de código e a velocidade de entrega da squad.</li>
+                        <li>Ampliou a cobertura de testes unitários com Jasmine e otimizou o consumo de APIs REST substituindo chamadas sequenciais por integrações paralelas.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card card hover-glow">
-                    <i class="fas fa-layer-group skill-icon"></i>
-                    <h3>Frontend & UI</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Angular Avançado</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">RxJS & Programação Reativa</span>
-                        <span class="tech-tag">Design Systems</span>
-                        <span class="tech-tag">Acessibilidade (a11y)</span>
-                    </div>
-                </div>
-                <div class="skill-card card hover-glow">
-                    <i class="fas fa-server skill-icon"></i>
-                    <h3>Backend & Integração</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Integração de APIs REST</span>
-                        <span class="tech-tag">C# .NET Core</span>
-                        <span class="tech-tag">Node.js / NestJS</span>
-                    </div>
-                </div>
-                <div class="skill-card card hover-glow">
-                    <i class="fas fa-shield-halved skill-icon"></i>
-                    <h3>Qualidade & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Testes Unitários (Jasmine)</span>
-                        <span class="tech-tag">Git & Gitflow</span>
-                        <span class="tech-tag">CI/CD Pipelines</span>
-                        <span class="tech-tag">Clean Architecture</span>
-                    </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Ago 2022 – Mar 2023</div>
+                <div class="timeline-details">
+                    <h4>Desenvolvedor Full Stack Júnior</h4>
+                    <span class="company">JDC Tech and People</span>
+                    <ul>
+                        <li>Otimizou a interface (UI/UX) e a navegação de um sistema interno voltado para rotulação de imagens (Machine Learning).</li>
+                        <li>Diagnosticou e corrigiu falhas críticas de comunicação entre o Front-end e o Back-end, estabelecendo padrões rigorosos para os payloads em JSON.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experiencia" class="experiencia section-padding fade-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Experiência Profissional</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item card">
-                    <div class="timeline-date">05/2023 - Atual</div>
-                    <div class="timeline-content">
-                        <h3>Engenheiro de Software Pleno</h3>
-                        <h4>Grupo LPJ</h4>
-                        <ul>
-                            <li>🚀 <strong>Performance:</strong> Reduzi o tempo de renderização de estruturas de dados de 5 minutos para menos de 3 segundos utilizando otimizações no Angular.</li>
-                            <li>🏗️ <strong>Componentização:</strong> Apliquei Atomic Design e conceitos de Design Systems para criar componentes reutilizáveis e layouts responsivos.</li>
-                            <li>⚙️ <strong>Qualidade de Código:</strong> Participei ativamente de Code Reviews e aumentei a cobertura de testes de frontend com Jasmine.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item card">
-                    <div class="timeline-date">08/2022 - 03/2023</div>
-                    <div class="timeline-content">
-                        <h3>Desenvolvedor Full Stack</h3>
-                        <h4>JDC Tech and People</h4>
-                        <ul>
-                            <li>Otimizou a interface (UI/UX) de sistemas internos consumindo APIs REST de forma eficiente.</li>
-                            <li>Identificou e corrigiu débitos técnicos e falhas críticas de comunicação de dados (JSON).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Nova Seção: Formação e Idiomas -->
+    <section id="formacao" class="formacao container section-padding fade-up">
+        <div class="section-header text-center">
+            <h3>Formação & Idiomas</h3>
+            <img src="assets/korean/flower-icon.png" class="divider-icon" alt="">
         </div>
-    </section>
-
-    <section id="projetos" class="projetos section-padding fade-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projetos em Destaque</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card card hover-glow">
-                    <div class="project-content">
-                        <h3>Lumen (CRM)</h3>
-                        <p>Plataforma corporativa com arquitetura robusta. Foco total em componentização, consumo de APIs REST e performance de renderização.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">.NET</span>
-                            <span class="tech-tag">Clean Architecture</span>
+        
+        <div class="formacao-grid">
+            <div class="academico">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Maio 2025 – Prev. 2027</div>
+                        <div class="timeline-details">
+                            <h4>Bacharelado em Sistemas de Informação</h4>
+                            <span class="company">Universidade Federal de Ouro Preto (UFOP)</span>
+                            <ul>
+                                <li>Foco prático em Engenharia de Software, desenvolvimento Full Stack e Arquitetura de Sistemas.</li>
+                                <li>Migração a partir do curso de Engenharia da Computação (iniciado em 2021), garantindo forte embasamento em raciocínio analítico e exatas.</li>
+                            </ul>
                         </div>
-                        <a href="https://github.com/adonisoliveiradasilva/Lumen" class="btn primary" target="_blank" rel="noopener noreferrer">Ver Repositório</a>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2019 – Jul 2020</div>
+                        <div class="timeline-details">
+                            <h4>Técnico em Informática (Web)</h4>
+                            <span class="company">Colégio São Francisco Xavier</span>
+                            <ul>
+                                <li>Formação estrutural em algoritmos, lógica de programação e arquitetura de aplicações para a web.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card card hover-glow">
-                    <div class="project-content">
-                        <h3>POC RxJS</h3>
-                        <p>Implementação focada em gerenciamento de estado complexo utilizando RxJS e programação reativa no Angular.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">RxJS</span>
-                            <span class="tech-tag">Atomic Design</span>
-                        </div>
-                        <a href="https://github.com/adonisoliveiradasilva/angular-rxjs-poc" class="btn primary" target="_blank" rel="noopener noreferrer">Ver Repositório</a>
+            </div>
+
+            <div class="idiomas">
+                <div class="info-box">
+                    <h4>Idiomas</h4>
+                    <div class="idioma-item">
+                        <span class="idioma-titulo">Inglês <span class="nivel-tag">Pré-Intermediário</span></span>
+                        <p>Ampla facilidade com leitura técnica, documentação oficial e consumo de conteúdos de desenvolvimento. Conversação e escrita em aprimoramento ativo.</p>
+                    </div>
+                    <div class="idioma-item">
+                        <span class="idioma-titulo">Português <span class="nivel-tag">Nativo</span></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="contato section-padding fade-up">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vamos Transformar Experiências?</h2>
+    <section id="projetos" class="projetos container section-padding fade-up">
+        <div class="section-header text-center">
+            <h3>Projetos Desenvolvidos</h3>
+            <img src="assets/korean/flower-icon.png" class="divider-icon" alt="">
+        </div>
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/korean/proj-lumen.jpeg" alt="Lumen CRM" class="blend-img">
+                </div>
+                <div class="card-content">
+                    <h4>Lumen (CRM & Operações)</h4>
+                    <p>Plataforma corporativa desenvolvida para a gestão de clientes e processos, estruturada sob os princípios de Domain-Driven Design (DDD).</p>
+                    <div class="tech-stack">
+                        <span>Angular</span><span>.NET</span><span>Arquitetura Limpa</span>
+                    </div>
+                    <a href="https://github.com/adonisoliveiradasilva/Lumen" target="_blank" class="link-btn">Acessar Repositório &rarr;</a>
+                </div>
             </div>
-            <div class="contact-info">
-                <a href="mailto:adonisoliveiradasilva18@gmail.com" class="contact-item card hover-glow" aria-label="Enviar e-mail"><i class="fas fa-envelope"></i> E-mail</a>
-                <a href="https://www.linkedin.com/in/adonis-oliveira/" target="_blank" rel="noopener noreferrer" class="contact-item card hover-glow" aria-label="Acessar LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/adonisoliveiradasilva" target="_blank" rel="noopener noreferrer" class="contact-item card hover-glow" aria-label="Acessar GitHub"><i class="fab fa-github"></i> GitHub</a>
+            <div class="projeto-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/korean/proj-universe.jpeg" alt="uniVerse" class="blend-img">
+                </div>
+                <div class="card-content">
+                    <h4>uniVerse</h4>
+                    <p>Sistema de gestão acadêmica que vincula tarefas, provas e calendários às disciplinas do estudante universitário.</p>
+                    <div class="tech-stack">
+                        <span>Angular</span><span>Java / Spring</span><span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/adonisoliveiradasilva/uniVerse" target="_blank" class="link-btn">Acessar Repositório &rarr;</a>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/korean/proj-poc.jpeg" alt="POC RxJS" class="blend-img">
+                </div>
+                <div class="card-content">
+                    <h4>POC RxJS & Estado</h4>
+                    <p>Implementação prática com foco em dominar fluxos reativos e gerenciamento avançado de estados no Angular utilizando RxJS.</p>
+                    <div class="tech-stack">
+                        <span>Angular</span><span>RxJS</span><span>Atomic Design</span>
+                    </div>
+                    <a href="https://github.com/adonisoliveiradasilva/angular-rxjs-poc" target="_blank" class="link-btn">Acessar Repositório &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato container section-padding fade-up">
+        <div class="contato-box">
+            <div class="contato-text">
+                <h2>Vamos construir soluções juntos?</h2>
+                <p>Estou disponível para novas oportunidades em posições de nível Pleno/Sênior. Sinta-se à vontade para enviar um e-mail ou conectar no LinkedIn.</p>
+                <div class="contact-links">
+                    <a href="mailto:adonisoliveiradasilva18@gmail.com">adonisoliveiradasilva18@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/adonis-oliveira/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/adonisoliveiradasilva" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="contato-image">
+                <img src="assets/korean/contact-vase.png" alt="Vaso Decorativo">
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 - Adonis Oliveira. Desenvolvido com foco em Clean Code e Acessibilidade.</p>
-        </div>
+        <p>&copy; 2026 - Adonis Oliveira. Código escalável, interfaces precisas.</p>
     </footer>
 
     <script src="js/main.js"></script>

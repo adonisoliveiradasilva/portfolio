@@ -1,29 +1,36 @@
-// Smooth scrolling para links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Navegação Ativa e Scroll Suave
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) {
-            target.scrollIntoView({
+        
+        navLinks.forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if(targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 70, // Compensação do header
                 behavior: 'smooth'
             });
         }
     });
 });
 
-// Header scroll effect
+// Sombra elegante no Header
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 50) {
-        header.style.backgroundColor = "rgba(15, 23, 42, 0.98)";
-        header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.4)";
+    if (window.scrollY > 30) {
+        header.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.03)";
     } else {
-        header.style.backgroundColor = "rgba(15, 23, 42, 0.9)";
         header.style.boxShadow = "none";
     }
 });
 
-// Animação de Scroll (Fade Up)
+// Animação de entrada (Fade Up)
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -34,7 +41,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Anima apenas uma vez
+            observer.unobserve(entry.target); 
         }
     });
 }, observerOptions);
